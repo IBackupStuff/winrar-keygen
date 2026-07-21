@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://github.com/bitcookies/winrar-keygen/releases"><img src="https://img.shields.io/github/v/release/bitcookies/winrar-keygen?label=version" /></a>
   <a href="https://github.com/bitcookies/winrar-keygen/issues"><img alt="Issues" src="https://img.shields.io/github/issues/bitcookies/winrar-keygen?color=F48D73" /></a>
-  <img src="https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet" />
+  <img src="https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet" />
   <img src="https://img.shields.io/badge/WPF_UI-Fluent_Design-0078D4" />
   <a href="https://github.com/bitcookies/winrar-keygen/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/bitcookies/winrar-keygen.svg" /></a>
 </p>
@@ -17,12 +17,12 @@
 
 ## 1. Introduction
 
-WinRAR Keygen GUI is a graphical companion for the [winrar-keygen](https://github.com/bitcookies/winrar-keygen) CLI tool. It provides a modern Windows desktop interface built with .NET 8 WPF and Fluent Design (WPF UI), allowing you to generate WinRAR license files without using the command line.
+WinRAR Keygen GUI is a graphical companion for the [winrar-keygen](https://github.com/bitcookies/winrar-keygen) CLI tool. It provides a modern Windows desktop interface built with .NET 10 WPF and Fluent Design (WPF UI), allowing you to generate WinRAR license files without using the command line.
 
 For the key generation algorithm, see [How does it work?](https://github.com/bitcookies/winrar-keygen/blob/master/README.HOW_DOES_IT_WORK.md)
 
-![Screenshot](assets/gui-light.png#gh-light-mode-only)
-![Screenshot](assets/gui-dark.png#gh-dark-mode-only)
+![Screenshot](Assets/gui-light.png#gh-light-mode-only)
+![Screenshot](Assets/gui-dark.png#gh-dark-mode-only)
 
 ## 2. Download
 
@@ -32,14 +32,14 @@ Go to the [Releases](https://github.com/bitcookies/winrar-keygen/releases) page 
 
 | Variant | Architecture | .NET Runtime Required | Size |
 | ------- | ------------ | --------------------- | ---- |
-| **x64** | AMD64 (most Windows PCs) | No (self-contained) | ~75 MB |
-| **x64-dotnet** | AMD64 | Yes ([.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)) | ~6 MB |
-| **ARM64** | ARM64 (Surface Pro X, Snapdragon laptops) | No (self-contained) | ~71 MB |
-| **ARM64-dotnet** | ARM64 | Yes ([.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)) | ~6 MB |
+| **x64** | AMD64 (most Windows PCs) | No (self-contained) | ~69 MB |
+| **x64-dotnet** | AMD64 | Yes ([.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)) | ~6 MB |
+| **ARM64** | ARM64 (Surface Pro X, Snapdragon laptops) | No (self-contained) | ~65 MB |
+| **ARM64-dotnet** | ARM64 | Yes ([.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)) | ~6 MB |
 
 > **Which one should I download?**
 > - Most users: download **x64** -- it works out of the box on any 64-bit Windows PC.
-> - If you already have .NET 8 Desktop Runtime installed, download **x64-dotnet** for a smaller file.
+> - If you already have .NET 10 Desktop Runtime installed, download **x64-dotnet** for a smaller file.
 > - For ARM-based Windows devices, download **ARM64** or **ARM64-dotnet**.
 
 The architecture label is displayed in the bottom-right corner of the GUI (e.g. `x64`, `ARM64 (.NET)`).
@@ -65,22 +65,22 @@ When enabled, the generated key is written directly to `%APPDATA%\WinRAR\rarreg.
 | Setting | Description |
 | ------- | ----------- |
 | **Remember Settings** | Persist preferences between sessions. When disabled, startup uses Windows theme and Windows UI language, and other preferences reset to defaults. |
-| **Theme** | Choose `Windows default`, `Light`, or `Dark` from the settings page. |
-| **Language** | Choose `Windows default`, `English`, or `简体中文` from the settings page. |
+| **Theme** | Choose `System`, `Light`, or `Dark` from the settings page. |
+| **Language** | Choose `System`, `English`, or `简体中文` from the settings page. |
 | **Autofill License Name** | Pre-fills "Single PC usage license" as the default license name. |
 | **Back Up Existing Key** | Creates a timestamped backup of `rarreg.key` before overwriting. |
 | **Check for Updates** | Automatically checks GitHub for new releases on startup. A red dot appears on the version number when an update is available. |
 
 ### Other
 
-- **Windows default** -- follows the current Windows theme and Windows UI language. Simplified Chinese Windows UI uses Simplified Chinese; other languages use English.
+- **System** -- follows the current Windows theme and Windows UI language. Simplified Chinese Windows UI uses Simplified Chinese; other languages use English.
 - **Version check** -- click the version number to manually check for updates or open the releases page.
 
 ## 4. Build from Source
 
 ### Prerequisites
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later
 - Windows 10 / 11
 
 ### Build
@@ -103,10 +103,10 @@ Output is placed in the `publish/` directory:
 
 ```
 publish/
-  x64/winrar-keygen-gui.exe          (~75 MB, self-contained)
-  x64-dotnet/winrar-keygen-gui.exe   (~6 MB, requires .NET 8)
-  ARM64/winrar-keygen-gui.exe        (~71 MB, self-contained)
-  ARM64-dotnet/winrar-keygen-gui.exe (~6 MB, requires .NET 8)
+  x64/winrar-keygen-gui.exe          (~69 MB, self-contained)
+  x64-dotnet/winrar-keygen-gui.exe   (~6 MB, requires .NET 10)
+  ARM64/winrar-keygen-gui.exe        (~65 MB, self-contained)
+  ARM64-dotnet/winrar-keygen-gui.exe (~6 MB, requires .NET 10)
 ```
 
 ## 5. License

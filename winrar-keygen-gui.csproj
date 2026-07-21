@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
@@ -11,10 +11,10 @@
     <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
 
     <!-- Version -->
-    <Version>4.2.0</Version>
-    <FileVersion>4.2.0.0</FileVersion>
-    <AssemblyVersion>4.2.0.0</AssemblyVersion>
-    <InformationalVersion>4.2.0.0</InformationalVersion>
+    <Version>4.3.0</Version>
+    <FileVersion>4.3.0.0</FileVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <InformationalVersion>4.3.0.0</InformationalVersion>
     <NeutralLanguage>en-US</NeutralLanguage>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
 
